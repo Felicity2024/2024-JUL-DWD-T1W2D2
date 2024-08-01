@@ -1,13 +1,35 @@
-.first {
+ .first {
     width: 100px;
     height: 100px;
     background-color: red;
     transition: 1s;
-}
+} 
 
 .first:hover {
-    transform: scale(2) translate(50px, 50px) rotate(45deg);
+    transform: scale(2) translate(50px, 50px) rotate(45deg) skew(30deg);
     width: 200px;
     background-color: green;
+    } 
 
+.card-parent {
+    margin-top: 50px;
+    display:flex;
+    justify-content:center;
+    
+}   
+
+.card {
+    border: 1px solid red;
+    border-radius: 12px;
+    overflow:hidden;
+    transition: 1s;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: -2px 1px 47px 9px rgba(230,29,29,0.75);
+}
+img {
+    width: 200px;
 }
