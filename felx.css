@@ -1,0 +1,21 @@
+.flex-parent {
+    display: flex;
+    height: 90vh;
+    border: solid red;
+    flex-wrap: wrap;
+    /* the main axis is row */
+    flex-direction: row;
+    /* Justify content align items along the main axis */
+    justify-content:center
+    /* align items alings item along the cross axis */
+    /* flex-start is the default value */
+    align-items:center; 
+}
+
+.flex-child {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin: 10px;
+    font-size: 48px;
+}
