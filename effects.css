@@ -30,7 +30,7 @@ img {
     width: 200px;
 } */
 
-.second {
+/* .second {
     margin-top: 50px;
     width: 300px;
     height: 300px;
@@ -49,6 +49,40 @@ img {
     }
     100% {
         width: 300px;
+    }
+} */
+
+.parent-typing-effect {
+    margin-top: 50px;
+    display: flex;
+}
+.typing-effect {
+    font-size: 24px;
+    animation: typing-effect 0.5s, change-width 5s steps(32, end);
+    animation-iteration-count: infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes change-width {
+    0% {
+         width: 0;
+    }
+    25% {
+        width: 0;
+    }
+    50% {
+        width: 100%; 
+    }
+}
+
+@keyframes typing-effect {
+    0% {
+        border-right: none;
+    }
+    100% {
+        border-right: 1px solid black;
     }
 }
     
